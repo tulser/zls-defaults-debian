@@ -1,0 +1,31 @@
+Source: zls-defaults
+Priority: optional
+Maintainer: W. Connor Yates <self@wcyates.xyz>
+Standards-Version: 4.7.0
+Build-Depends: debhelper-compat (= 13)
+Section: devel
+Rules-Requires-Root: no
+Homepage: https://salsa.debian.org/zig-team/zls-defaults
+Vcs-Browser: https://salsa.debian.org/zig-team/zls-defaults
+Vcs-Git: https://salsa.debian.org/zig-team/zls-defaults.git
+
+Package: zls
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         zls-0.15
+Recommends: zig
+Description: Language server for Zig that provides IDE-like features to editors
+ zls understands Zig code and provides editor features on Zig code, including:
+  - code completion
+  - compile and syntax errors
+  - go-to-definition
+  - formatting
+  - code actions
+  - hints
+  - and more.
+ .
+ zls is a language server that implements the Language Server Protocol;
+ it can work with many editors through a plugin.
+ .
+ This is a dependency package providing zls.
